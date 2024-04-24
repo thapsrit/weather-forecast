@@ -15,21 +15,36 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city" required />
-          <input type="Submit" value="Search" />
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="Submit" value="Search" class="search-form-bottom" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>South Africa</h1>
-          <p>
-            Wednesday 11:39, broken clouds
-            <br />
-            Humidity: 68%, Wind: 5.66km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time"> </span>,<span id="weatherDescription"> </span>
+              <br />
+              Humidity:
+              <strong><span id="humidity"></span> %</strong>, Wind:<strong>
+                <span id="windspeed"></span>km/h</strong
+              >
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>🌤️ 15°C</div>
       </main>
       <footer>
         <p>
