@@ -4,40 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>forecast-app</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city" required />
-        <input type="Submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>South Africa</h1>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter a city" required />
+          <input type="Submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>South Africa</h1>
+          <p>
+            Wednesday 11:39, broken clouds
+            <br />
+            Humidity: 68%, Wind: 5.66km/h
+          </p>
+        </div>
+        <div>🌤️ 15°C</div>
+      </main>
+      <footer>
         <p>
-          Wednesday 11:39, broken clouds
-          <br />
-          Humidity: 68%, Wind: 5.66km/h
+          This project was coded by
+          <a href="https://github.com/thapsrit" target="_blank">
+            Mmathapelo Matsomela
+          </a>
+          and is
+          <a href="https://github.com/thapsrit/weather-forecast" target="_blank"
+            >on github</a
+          >
+          and
+          <a href="https://thapelo-forecast.netlify.app/" target="_blank"
+            >hosted on netlify</a
+          >
         </p>
-      </div>
-      <div>🌤️ 15°C</div>
-    </main>
-    <footer>
-      <p>
-        This project was coded by
-        <a href="https://github.com/thapsrit" target="_blank">
-          Mmathapelo Matsomela
-        </a>
-        and is
-        <a href="https://github.com/thapsrit/weather-forecast" target="_blank"
-          >on github</a
-        >
-        and
-        <a href="https://thapelo-forecast.netlify.app/" target="_blank"
-          >hosted on netlify</a
-        >
-      </p>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
